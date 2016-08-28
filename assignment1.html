@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html>
-
+<head>
 <style>
+html {
+  font-family:"Lucida Grande";
+}
 header {
   background-color: #c4c4c4;
-  center: left;
-  header
+  background-size: cover;
 }
-main {
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+li {
+  display: inline;
+  padding: 10px;
+}
+button {
   font-family:"Lucida Grande";
-  background-image:url("images/background.jpg");
+  background-color: rgb(42,76,178);
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: black;
+  float: right;
+  padding: 10px 24px 10px 24px;
+  text-align: center;
 }
 body {
+  background:url("images/background.png");
+}
+main {
   background-color: white;
-  border-radius: 25px;
-  padding: 50px 10px 10px 50px;
+  box-shadow: 2px 2px 2px 2px rgb(210,210,210);
+  border-radius: 8px;
+  margin-top:40px;
+  margin-bottom:40px;
+  margin-left:40px;
+  margin-right:40px;
+  padding-top: 10px;
+  padding-right:26px;
+  padding-bottom:40px;
+  padding-left:26px;
+}
+
+footer {
+  text-align: center;
+  color: rgb(162,164,187);
+  border-top-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(210,210,210);
+  font-size:12px;
 }
 </style>
+</head>
 
 <header>
-  <title></title>
-  <img src="images/acme-corp.jpg"/ alt=""> 
-  <button type="button">Log in</button>
-
+  <ul>
+    <li><img src="images/acme-corp.jpg"/ alt=""></li>
+    <li style="color:white;font-size:16px;text-shadow: 0.5px 0.5px grey">Products</li>
+    <li><button type="button">Sign Up</button></li>
+  </ul>
 </header>
 
 <main>
   <body>
     <h1> Welcome to ACME Corp! </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vitae rem perspiciatis sint pariatur dolore odio tempora soluta laborum aliquam iure suscipit, voluptate, sunt officia ducimus facilis fugit ipsum hic. </p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </body>
 </main>
 
 <footer>
-  <p>
-
-  </p>
+  <p>Copyright, 2015</p>
 </footer>
+
 </html>
