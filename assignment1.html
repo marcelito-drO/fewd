@@ -7,16 +7,18 @@ html {
 }
 header {
   background-color: #c4c4c4;
-  background-size: cover;
+  height: 50px;
+  padding: 10px 10px 10px 10px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: rgb(142,142,142);
+  border-width: 0.5px;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
+img {
+  height: 50px;
+  width: 180px;
 }
-li {
-  display: inline;
-  padding: 10px;
-}
+
 button {
   font-family:"Lucida Grande";
   background-color: rgb(42,76,178);
@@ -46,7 +48,6 @@ main {
   padding-bottom:40px;
   padding-left:26px;
 }
-
 footer {
   text-align: center;
   color: rgb(162,164,187);
@@ -54,16 +55,17 @@ footer {
   border-width: 0.5px;
   border-color: rgb(210,210,210);
   font-size:12px;
+  padding-top: 16px;
 }
 </style>
 </head>
 
 <header>
-  <ul>
-    <li><img src="images/acme-corp.jpg"/ alt=""></li>
-    <li style="color:white;font-size:16px;text-shadow: 0.5px 0.5px grey">Products</li>
-    <li><button type="button">Sign Up</button></li>
-  </ul>
+    <img src="images/acme-corp.jpg"/ alt="">
+    <nav>
+      <a style="color:white;font-size:16px;text-shadow: 0.5px 0.5px grey">Products</a>
+      <button type="button">Sign Up</button>
+    </nav>
 </header>
 
 <main>
