@@ -67,6 +67,6 @@ footer {
   margin-right: 50px;
   text-shadow: 0px 1px 1px #4D4D4D;
 }
-.first_product_set {
-  display: inline;
+.first-name:focus {
+  border-color: rgb(42,76,178);
 }
