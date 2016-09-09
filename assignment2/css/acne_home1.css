@@ -65,8 +65,15 @@ footer {
   padding-top: 16px;
   margin-left: 50px;
   margin-right: 50px;
-  text-shadow: 0px 1px 1px #4D4D4D;
+  text-shadow: 0px 1px 1px grey;
 }
 .first-name:focus {
   border-color: rgb(42,76,178);
+}
+.row-signup {
+  margin-bottom: 5px;
+}
+.row-signup label {
+  display: inline-block;
+  min-width: 100px;
 }
