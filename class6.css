@@ -1,0 +1,26 @@
+body {
+  font-family: "Arial";
+}
+
+a {
+  background-color: blue;
+}
+.button {
+  color: white;
+  background: rgb(0,185,125);
+  font-family: inherit;
+  border: none;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-small {
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+.button-danger {
+background-color:red;
+}
