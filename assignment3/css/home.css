@@ -8,9 +8,18 @@ header {
   width: 100%;
   position: relative;
 }
+.twitter {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+}
 .header-buttons {
   float: right;
   padding: 0 30px 0 10px;
+}
+nav {
+  padding: 1px 0 0 0;
 }
 .button {
   color: white;
