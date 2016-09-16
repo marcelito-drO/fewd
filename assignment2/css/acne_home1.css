@@ -71,9 +71,16 @@ footer {
   border-color: rgb(42,76,178);
 }
 .row-signup {
+  padding: 10px 0 10px 0;
   margin-bottom: 5px;
 }
 .row-signup label {
   display: inline-block;
   min-width: 100px;
+}
+.how_did_you {
+  padding: 10px 0 4px 0;
+}
+.terms_of {
+  padding: 10px 0 10px 0;
 }
