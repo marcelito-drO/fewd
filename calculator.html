@@ -1,6 +1,36 @@
-<script type="text/javascript"
-  var a=50;
-  var c=60;
-    console.log(a+c);
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+  </head>
+  <body>
+    <p>
+      Calculator
+    </p>
 
-</script>
+    <form class="" action="index.html" method="post">
+      <input type="text" value="15" class="num-1"> +
+      <input type="text" value="16" class="num-2"> =
+      <input type="text" class="result" disabled><br>
+      <button type="submit">Add</button>
+    </form>
+
+
+    <script type="text/javascript">
+    var n = document.querySelector(".num-1").value;
+      console.log(n);
+    var m = document.querySelector(".num-2").value;
+      console.log(m);
+    n = parseInt(n);
+    m = parseInt(m);
+    document.querySelector(".result").value = n + m;
+      console.log(n+m);
+    var p = document.querySelector(".num-1");
+    p.value = "";chro
+    </script>
+
+
+  </body>
+</html>
