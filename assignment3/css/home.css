@@ -2,25 +2,30 @@ body {
   background-color: rgb(241,240,245);
   font-family: "Arial";
 }
+
 header {
   background: linear-gradient(180deg, rgb(22,171,108), rgb(6,145,86));
-  height: 60px;
+  height: 70px;
   width: 100%;
   position: relative;
 }
-.twitter_div {
+
+.twitter-div {
   padding: 18px 0 0 0;
 }
+
 .twitter {
   font-size: 28px;
   color: white;
   font-weight: bold;
   padding: 0 0 0 20px;
 }
+
 .header-buttons {
   float: right;
   padding: 0 30px 0 10px;
 }
+
 .button {
   color: white;
   background: rgb(6,145,86);
@@ -32,10 +37,12 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+
 .button-tweet {
   font-size: 14px;
   font-weight: bold;
 }
+
 main {
   background-color: white;
   box-shadow: 4px 2px 4px 2px rgb(210,210,210);
@@ -44,49 +51,63 @@ main {
   padding: 10px 26px 40px 26px;
   width: 88%;
 }
+
 footer {
   text-align: center;
 }
+
 li {
   display: inline;
   padding: 16px;
   color: rgb(180,180,180);
   font-size: 14px;
 }
+
 .headline{
   padding: 12px;
   display: flex;
 }
+
 .poke-pic {
   max-height: 70px;
   max-width: 70px;
   flex: 1;
   padding-right: 12px;
 }
-.writing_box {
+
+.writing-box {
   width: 100%;
   border-radius: 6px;
   border: 1px rgb(204,204,204) solid;
   margin: 0 0 14px 0;
+  color: rgb(204,204,204);
+  font-size: 14px;
+  padding: 12px;
 }
+
 .content-headline {
   flex: 11;
 }
+
 .next-highlight {
   padding: 20px 12px 20px 12px;
   display: flex;
 }
+
 .content {
   flex: 11;
 }
+
 .like-button {
   font-size: 16px;
   font-weight: bold;
   color: rgb(22,171,108);
 }
+
 p {
   padding: 0 0 6px 0;
 }
+
 .like-count {
   font-size: 16px;
   color: rgb(204,204,204);
