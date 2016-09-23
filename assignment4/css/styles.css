@@ -3,9 +3,11 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.1em; }
 
 body {
-  font-family: 'Slabo 27px', serif;  
+  font-family: 'Slabo 27px', serif;
   font-size: 20px;
   color: white;
+  text-align: center;
+  background-color: rgba(254,0,102,0.9);
 }
 
 input {
@@ -26,8 +28,4 @@ input {
 label {
   display: block;
   margin-bottom: 1em;
-}
-
-body {
-  background-color: rgba(254,0,102,0.9);
 }
