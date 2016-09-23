@@ -157,6 +157,106 @@
           <input type="text" value="" class="f5">
         </th>
       </tr>
+      <tr>
+        <th>
+          <input type="text" value="6" class="g0">
+        </th>
+        <th>
+          <input type="text" value="" class="g1">
+        </th>
+        <th>
+          <input type="text" value="" class="g2">
+        </th>
+        <th>
+          <input type="text" value="" class="g3">
+        </th>
+        <th>
+          <input type="text" value="" class="g4">
+        </th>
+        <th>
+          <input type="text" value="" class="g5">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <input type="text" value="7" class="h0">
+        </th>
+        <th>
+          <input type="text" value="" class="h1">
+        </th>
+        <th>
+          <input type="text" value="" class="h2">
+        </th>
+        <th>
+          <input type="text" value="" class="h3">
+        </th>
+        <th>
+          <input type="text" value="" class="h4">
+        </th>
+        <th>
+          <input type="text" value="" class="h5">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <input type="text" value="8" class="i0">
+        </th>
+        <th>
+          <input type="text" value="" class="i1">
+        </th>
+        <th>
+          <input type="text" value="" class="i2">
+        </th>
+        <th>
+          <input type="text" value="" class="i3">
+        </th>
+        <th>
+          <input type="text" value="" class="i4">
+        </th>
+        <th>
+          <input type="text" value="" class="i5">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <input type="text" value="9" class="j0">
+        </th>
+        <th>
+          <input type="text" value="" class="j1">
+        </th>
+        <th>
+          <input type="text" value="" class="j2">
+        </th>
+        <th>
+          <input type="text" value="" class="j3">
+        </th>
+        <th>
+          <input type="text" value="" class="j4">
+        </th>
+        <th>
+          <input type="text" value="" class="j5">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <input type="text" value="10" class="k0">
+        </th>
+        <th>
+          <input type="text" value="" class="k1">
+        </th>
+        <th>
+          <input type="text" value="" class="k2">
+        </th>
+        <th>
+          <input type="text" value="" class="k3">
+        </th>
+        <th>
+          <input type="text" value="" class="k4">
+        </th>
+        <th>
+          <input type="text" value="" class="k5">
+        </th>
+      </tr>
     </table>
 
     <script>
@@ -164,114 +264,38 @@
     document.querySelector(".document-title").value = document.title;
 
     // Exercise 2;
-    var a = document.querySelector(".first-name").value;
-    var b = document.querySelector(".last-name").value;
-    c = a + " " + b;
-    document.querySelector(".full-name").value = c;
+    function displayFullName (firstName,lastName,fullName) {
+      var a = document.querySelector(firstName).value;
+      var b = document.querySelector(lastName).value;
+      document.querySelector(".full-name").value = a + " " + b;
+    };
+
+    displayFullName(".first-name",".last-name", ".full-name");
 
     // Stuff covered in class:
-    var a1 = document.querySelector(".a1").value;
-    a1 = parseInt(a1);
-    var b0 = document.querySelector(".b0").value;
-    b0 = parseInt(b0);
-    var p = a1 * b0;
-    document.querySelector(".b1").value = p;
+  function multiply(row, column, output) {
+    var n = parseInt(document.querySelector(column).value);
+    var m = parseInt(document.querySelector(row).value);
+    document.querySelector(output).value = m * n;
+  };
 
-    var a2 = document.querySelector(".a2").value;
-    a2 = parseInt(a2);
-    var b2 = a2 * b0;
-    document.querySelector(".b2").value = b2;
+  function entireRow(letter2){
+    multiply(".a1","."+letter2+"0","."+letter2+"1");
+    multiply(".a2","."+letter2+"0","."+letter2+"2");   multiply(".a3","."+letter2+"0","."+letter2+"3");   multiply(".a4","."+letter2+"0","."+letter2+"4");
+    multiply(".a5","."+letter2+"0","."+letter2+"5");
+  };
 
-    var a3 = document.querySelector(".a3").value;
-    a3 = parseInt(a3);
-    var b3 = a3 * b0;
-    document.querySelector(".b3").value = b3;
+    entireRow("b");
+    entireRow("c");
+    entireRow("d");
+    entireRow("e");
+    entireRow("f");
+    entireRow("g");
+    entireRow("h");
+    entireRow("i");
+    entireRow("j");
+    entireRow("k");
 
-    var a4 = document.querySelector(".a4").value;
-    a4 = parseInt(a4);
-    var b4 = a4 * b0;
-    document.querySelector(".b4").value = b4;
-
-    var a5 = document.querySelector(".a5").value;
-    a5 = parseInt(a5);
-    var b5 = a5 * b0;
-    document.querySelector(".b5").value = b5;
-
-    var c0 = document.querySelector(".c0").value;
-    c0 = parseInt(c0);
-    var q = a1 * c0;
-    document.querySelector(".c1").value = q;
-
-    var c1 = document.querySelector(".c1").value;
-    c1 = parseInt(c1);
-    var c1 = a2 * c0;
-    document.querySelector(".c2").value = c1;
-
-    var c2 = document.querySelector(".c2").value;
-    c2 = parseInt(c2);
-    var c2 = a3 * c0;
-    document.querySelector(".c3").value = c2;
-
-    var c3 = document.querySelector(".c3").value;
-    c3 = parseInt(c3);
-    var c3 = a4 * c0;
-    document.querySelector(".c4").value = c3;
-
-    var c4 = document.querySelector(".c4").value;
-    c4 = parseInt(c4);
-    var c4 = a5 * c0;
-    document.querySelector(".c5").value = c4;
-
-    var d0 = document.querySelector(".d0").value;
-    d0 = parseInt(d0);
-    var d1 = d0 * a1;
-    document.querySelector(".d1").value = d1;
-
-    var d2 = d0 * a2;
-    document.querySelector(".d2").value = d2;
-
-    var d3 = d0 * a3;
-    document.querySelector(".d3").value = d3;
-
-    var d4 = d0 * a4;
-    document.querySelector(".d4").value = d4;
-
-    var d5 = d0 * a5;
-    document.querySelector(".d5").value = d5;
-
-    var e0 = document.querySelector(".e0").value;
-    e0 = parseInt(e0);
-    var e1 = e0 * a1;
-    document.querySelector(".e1").value = e1;
-
-    var e2 = e0 * a2;
-    document.querySelector(".e2").value = e2;
-
-    var e3 = e0 * a3;
-    document.querySelector(".e3").value = e3;
-
-    var e4 = e0 * a4;
-    document.querySelector(".e4").value = e4;
-
-    var e5 = e0 * a5;
-    document.querySelector(".e5").value = e5;
-
-    var f0 = document.querySelector(".f0").value;
-    f0 = parseInt(f0);
-    var f1 = f0 * a1;
-    document.querySelector(".f1").value = f1;
-
-    var f2 = f0 * a2;
-    document.querySelector(".f2").value = f2;
-
-    var f3 = f0 * a3;
-    document.querySelector(".f3").value = f3;
-
-    var f4 = f0 * a4;
-    document.querySelector(".f4").value = f4;
-
-    var f5 = f0 * a5;
-    document.querySelector(".f5").value = f5;
     // Your code goes here!
     </script>
   </body>
