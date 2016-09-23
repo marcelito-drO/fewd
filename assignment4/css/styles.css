@@ -1,13 +1,18 @@
-h1 { font-size: 1.2em; }
+h1 { font-size: 2em; }
+
 h2 { font-size: 1.1em; }
+
 body {
-  font-family: arial;
+  font-family: 'Slabo 27px', serif;  
   font-size: 20px;
+  color: white;
 }
+
 input {
   font-size: inherit;
   font-family: inherit;
 }
+
 .times-table th,
 .times-table td {
   width: 50px;
@@ -17,7 +22,12 @@ input {
   width: 100%;
   text-align: center;
 }
+
 label {
   display: block;
   margin-bottom: 1em;
+}
+
+body {
+  background-color: rgba(254,0,102,0.9);
 }
