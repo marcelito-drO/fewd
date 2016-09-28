@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <header>
+
+  </header>
+  <head>
+
+  </head>
+
+  <body>
+
+  </body>
+
+  <footer>
+
+  </footer>
+  <style>
+
+    div {
+      padding: 1em;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      border: 1px solid black;
+    }
+    textArea {
+      with: 100%
+    }
+  </style>
+
+  <textarea placeholder="Comments go here..."></textarea>
+
+
+    <div id="container">
+      <div class="comment">
+        This is a comment!
+      </div>
+    </div>
+
+    <button>Leave an actual comment!</button>
+
+  <script>
+  var button = document.querySelector("button");
+  function makeASurpriseComment(event) {
+    event.preventDefault();
+    createComment(document.querySelector("textArea").value);
+  }
+  button.addEventListener("click",makeASurpriseComment);
+
+  function createComment(commentContent) {
+  var commentDiv = document.createElement("div");
+  commentDiv.textContent = commentContent;
+
+  // Adding a class to the new div of "comment"
+  // commentDiv.setAttribute("class","comment")
+  commentDiv.classList.add("comment");
+  // Defining variable for parent and appending child
+  var parent = document.querySelector("#container");
+  parent.appendChild(commentDiv);
+  }
+  // how to creat the newComment function in JS:
+  // 1. create new element
+  // 2. set the text content
+  // 3. add a class
+  // 4. append to DOM (somewhere)
+  // 4.a. Parent and child?
+
+  </script>
+
+</html>

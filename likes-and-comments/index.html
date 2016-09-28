@@ -62,19 +62,22 @@
       }
       likeLink.addEventListener("click",like);
 
-      var submit = document.querySelector(".submit");
+
+      var div = document.createElement("div");
+      div.setAttribute("class","comment");
+      div.setAttribute("width","100%");
+      document.querySelector("#comments").appendChild(div);
+      var textArea = document.createElement("textArea");
+      textArea.setAttribute("id","new-comment-body");
+      textArea.setAttribute("placeholder","Leave a comment...");
+      document.querySelector(".comment").appendChild(textArea);
 
       function newComment(div) {
         div.preventDefault();
-        var div = document.createElement("div");
-        div.setAttribute("class","comment");
-        div.setAttribute("width","100%");
-        document.querySelector("#comments").appendChild(div);
-        var textArea = document.createElement("textArea");
-        textArea.setAttribute("id","new-comment-body");
-        textArea.setAttribute("placeholder","Leave a comment...");
-        document.querySelector(".comment").appendChild(textArea);
-      }
+
+        var submit = document.querySelector(".submit");
+        
+       }
       submit.addEventListener("click",newComment);
 
       // Missing: the text you add in the textArea needs to be added to the div that is created when the user hits the comment button
