@@ -51,13 +51,34 @@
 
     <!-- <script src="script.js"> </script> -->
     <script>
-      var div = document.createElement("div");
-      div.setAttribute("class","comment");
-      div.setAttribute("width","100%");
-      document.querySelector("#comments").appendChild(div);
-      var textArea = document.createElement("textArea");
-      textArea.setAttribute
 
+      var likeCount = document.querySelector(".like-count");
+      var likeLink = document.querySelector(".like-link");
+
+      function like(event) {
+        event.preventDefault();
+        var count = parseInt(likeCount.textContent);
+        likeCount.textContent = count + 1;
+      }
+      likeLink.addEventListener("click",like);
+
+      var submit = document.querySelector(".submit");
+
+      function newComment(div) {
+        div.preventDefault();
+        var div = document.createElement("div");
+        div.setAttribute("class","comment");
+        div.setAttribute("width","100%");
+        document.querySelector("#comments").appendChild(div);
+        var textArea = document.createElement("textArea");
+        textArea.setAttribute("id","new-comment-body");
+        textArea.setAttribute("placeholder","Leave a comment...");
+        document.querySelector(".comment").appendChild(textArea);
+      }
+      submit.addEventListener("click",newComment);
+
+      // Missing: the text you add in the textArea needs to be added to the div that is created when the user hits the comment button
+      // Every time the user enters text and hits comment, it adds an additional div
       // Parent is div id = "comments"
       // Append child to div
 
