@@ -63,10 +63,10 @@
       likeLink.addEventListener("click",like);
 
       function newComment(text) {
-        var nextComment = document.createElement("textarea");
+        var nextComment = document.createElement("div");
+        nextComment.setAttribute("class","comment");
         nextComment.textContent = text;
         document.querySelector("#comments").appendChild(nextComment);
-        document.querySelector("#new-comment-body").value = "";
       }
 
       var button = document.querySelector("button");
