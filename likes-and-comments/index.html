@@ -62,8 +62,34 @@
       }
       likeLink.addEventListener("click",like);
 
+      function newComment(text) {
+        var nextComment = document.createElement("textarea");
+        nextComment.textContent = text;
+        document.querySelector("#comments").appendChild(nextComment);
+        document.querySelector("#new-comment-body").value = "";
+      }
 
-      var div = document.createElement("div");
+      var button = document.querySelector("button");
+
+      function comment(event){
+        event.preventDefault();
+        newComment(document.querySelector("textArea").value);
+        document.querySelector("#new-comment-body").value = "";
+      }
+      button.addEventListener("click",comment);
+
+
+
+      // Missing: the text you add in the textArea needs to be added to the div that is created when the user hits the comment button
+      // Every time the user enters text and hits comment, it adds an additional div
+      // Parent is div id = "comments"
+      // Append child to div
+
+    </script>
+  </body>
+</html>
+
+<!--       var div = document.createElement("div");
       div.setAttribute("class","comment");
       div.setAttribute("width","100%");
       document.querySelector("#comments").appendChild(div);
@@ -76,15 +102,6 @@
         div.preventDefault();
 
         var submit = document.querySelector(".submit");
-        
+
        }
-      submit.addEventListener("click",newComment);
-
-      // Missing: the text you add in the textArea needs to be added to the div that is created when the user hits the comment button
-      // Every time the user enters text and hits comment, it adds an additional div
-      // Parent is div id = "comments"
-      // Append child to div
-
-    </script>
-  </body>
-</html>
+      submit.addEventListener("click",newComment); -->
