@@ -1,0 +1,60 @@
+html {
+  background-color: rgb(242,241,245);
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:checked + span {
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: rgba(205,205,209,1);
+  font-size: 18px;
+  flex: 3
+}
+
+header {
+  padding: 50px 50px 0 50px;
+  display: flex;
+  width: 70%;
+}
+.number-todos {
+  flex: 1;
+  vertical-align: text-bottom;
+  font-size: 36px;
+}
+
+.title {
+  font-size: 40px;
+  flex: 3;
+}
+
+main {
+  padding: 10px 0 0 50px;
+}
+
+.button {
+  color: white;
+  background: rgb(4,156,216);
+  font-family: inherit;
+  border: none;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  flex: 1;
+}
+
+li {
+  list-style-type: none;
+  padding: 15px 0 0 0;
+}
+
+.enter-commands {
+  display: flex;
+  width: 70%;
+}
