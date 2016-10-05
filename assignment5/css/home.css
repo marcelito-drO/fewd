@@ -20,16 +20,19 @@ header {
   padding: 50px 50px 0 50px;
   display: flex;
   width: 70%;
+  align-items: flex-end;
 }
-.number-todos {
+.todo-count {
   flex: 1;
-  vertical-align: text-bottom;
-  font-size: 36px;
+  font-size: 40px;
 }
-
+.todo {
+  flex: 1;
+  font-size: 40px;
+}
 .title {
   font-size: 40px;
-  flex: 3;
+  flex: 7n;
 }
 
 main {

@@ -1,0 +1,32 @@
+<ul>
+  <li>cows,horses,dogs,cats</li>
+  <li>porsche,vw,audi</li>
+  <li>homework,grocery,shopping</li>
+</ul>
+
+<script>
+  var masterList = document.querySelectorAll("li");
+
+  // Outer Loop
+  for (var i=0 ; i < masterList.length ; i++) {
+    var nouns = masterList[i].textContent.split(",");
+
+    // Inner Loop
+    for (var j = 0; j < nouns.length; j++) {
+      console.log(nouns[j]);
+    }
+  }
+
+ var suits = ["spades", "hearts", "diamonds", "clubs"];
+ var values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+
+ for (var i = 0; i < suits.length; i++) {
+   suits[i];
+   for (var j = 0; j < values.length; j++) {
+     values[j];
+
+     console.log(suits[i], values[j]);
+   }
+ }
+
+</script>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cards</title>
+    <style>
+    body {
+      background-color: #59A856;
+      font-family: sans-serif;
+    }
+
+    /* Define the styles for a card here... */
+    .card {
+      background-color: white;
+      width:80px;
+      height: 120px;
+      border: gray 1px solid;
+      border-radius: 6px;
+      padding: 10px 6px 6px 16px;
+      margin: 1em;
+      display: inline-block;
+    }
+
+    </style>
+  </head>
+  <body>
+    <button id="deal">
+      Deal a new hand
+    </button>
+
+    <div id="board">
+      <div class="card">1♠️</div>
+
+      <!-- cards will go here (js will put them here) -->
+      <!-- try making a couple just to make sure they look right -->
+    </div>
+
+    <script>
+    var suits = [
+      "♠️",
+      "❤️",
+      "♦️",
+      "♣️"
+    ];
+
+    var values = [
+      "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"
+    ];
+
+    var board = document.querySelector("#board");
+    var dealButton =  document.querySelector("#deal");
+
+    function deal() {
+
+            for (var i = 0; i < suits.length; i++) {
+                suits[i];
+                for (var j = 0; j < values.length; j++) {
+                    values[j];
+                    console.log(suits[i], values[j]);
+                    var card = document.createElement("div");
+                    card.setAttribute("class", "card");
+                    document.querySelector("#board").appendChild(card);
+                    card.textContent = suits[i] + values[j];
+                    }
+                }
+            }
+        dealButton.addEventListener("click", deal);
+    </script>
+  </body>
+</html>
