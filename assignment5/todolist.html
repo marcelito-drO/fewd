@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/home.css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <head>
     <meta charset="utf-8">
@@ -14,24 +11,22 @@
   <body>
 
     <header>
+
       <p class="title">Today's Todos</p>
-      <a class="todo-count">0</a>
-      <a class="todo">todos</a>
+        <div class="counting">
+          <a class="todo-count">0</a>
+          <a class="todo">todos</a>
+        </div>
+
     </header>
 
     <main>
       <div class="enter-commands">
-        <textarea name="next-todo" rows="2" cols="60" placeholder="What do you need to do today?">
-        </textarea>
-        <button type="button" name="create-item" class="button">Create</button>
+        <textarea rows="2" cols="60" placeholder="What are you up to today?"></textarea>
+        <input type="Submit"></input>
       </div>
+      <ul class="todo-items"></ul>
 
-      <li>
-        <label>
-          <input type="checkbox">
-          <span>Buy some milk</span>
-        </label>
-      </li>
     </main>
 
     <footer>

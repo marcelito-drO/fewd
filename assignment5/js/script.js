@@ -12,21 +12,21 @@ function newListItem(text) {
   var item = document.createElement("input");
   var userText = document.createElement("span");
 
+  item.setAttribute("type", "checkbox");
+  userText.textContent = text;
+
   li.appendChild(label);
   label.appendChild(item);
   label.appendChild(userText);
-
-  document.querySelector("main").appendChild(li);
-  userText.textContent = text;
-
-  item.setAttribute("type", "checkbox");
+  document.querySelector("ul").appendChild(li);
 }
 
-var button = document.querySelector(".button");
+var inputtt = document.querySelector("input");
 
-function newItem (event) {
- event.preventDefault();
+function newTodo(event) {
+  event.preventDefault();
+  newListItem(document.querySelector("textArea").value);
+  var ul = document.querySelector("ul");
+  document.querySelector(".todo-count").textContent = ul.length;
 }
-newListItem(document.querySelector("textArea").value)
-
-button.addEventListener("click",newItem);
+inputtt.addEventListener("click",newTodo);
