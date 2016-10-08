@@ -11,7 +11,6 @@ function newListItem(text) {
   var label = document.createElement("label");
   var item = document.createElement("input");
   var userText = document.createElement("span");
-  var ul = document.querySelector("ul");
 
   item.setAttribute("type", "checkbox");
   userText.textContent = text;
@@ -27,8 +26,10 @@ var inputtt = document.querySelector("input");
 function newTodo(event) {
   event.preventDefault();
   newListItem(document.querySelector("textArea").value);
-  var ul = document.querySelector("ul");
   var total = parseFloat(document.querySelector("#total-count"));
   total.value = parseFloat(total.value) + 1;
 }
 inputtt.addEventListener("click",newTodo);
+
+var textAreaa = document.querySelector("textArea");
+textAreaa.addEventListener("return",newTodo);
