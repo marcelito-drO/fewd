@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX example</title>
+    <script src="jquery-3.1.1.js"></script>
+  </head>
+  <body>
+    <div class="user-add">
+      <form>
+        <input type="search" id="query" placeholder="GitHub username">
+        <input type="submit" value="Lookup" id="submit">
+      </form>
+    </div>
+
+    <div class="user-result">
+      <table>
+        <tr>
+          <th>Name:</th>
+          <td id="user-name"></td>
+        </tr>
+        <tr>
+          <th>Bio:</th>
+          <td id="user-bio"></td>
+        </tr>
+        <tr>
+          <th>Picture:</th>
+          <td id="user-picture"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+    var submitt = document.querySelector("#submit");
+    var input = document.querySelector("#query");
+    submitt.addEventListener("click",findClassmate);
+
+    function findClassmate(event){
+      event.preventDefault();
+      var user = input.value;
+      $.get("https://gist.githubusercontent.com/avand/a06a1990a51eba2045daeb42717ecee7/raw/dc21e218dab32710d34c17328fc9a47adae4b93e/avand.json", handleResults);
+    }
+
+    function handleResults(results) {
+      console.log(results);
+      console.log(results.name);
+      console.log(results.avatar_url);
+      console.log(results.bio);
+
+      document.querySelector("#user-name").textContent = results.name;
+      document.querySelector("#user-bio").textContent = results.bio;
+      document.querySelector("#user-picture").textContent = results.avatar_url;
+    }
+
+    </script>
+  </body>
+</html>
