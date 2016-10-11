@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(57,57,57);
+  color: white;
+  text-align: left;
+  padding: 30px 40px;
+  font-family: "Arial";
+}
+
+p {
+  padding: 15px 0;
+  margin: auto;
+}
+
+.movie-full {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+ul {
+  flex: 3;
+  width: 50%;
+}
+
+li {
+ padding: 10px 10px;
+ display: inline-block;
+}
+
+.poster {
+  width: 160px;
+}
+
+table {
+  flex: 2;
+}
