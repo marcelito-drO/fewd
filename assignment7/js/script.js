@@ -7,7 +7,7 @@ for (var i = 0; i < movieClick.length; i++) {
 function getMovie(event) {
   var clickedMovie = event.target;
   var imdbID = clickedMovie.id;
-  var url = "http://omdbapi.com/?i=" + imdbID;
+  var url = "https://omdbapi.com/?i=" + imdbID;
 
   $.get(url, displayResults);
 }
