@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ChoChoo</title>
+  </head>
+  <header>
+    <h1>Gian and Marcelo figure shit out</h1>
+  </header>
+  <body>
+    <form class="todo-inputs" method="post">
+      <input class="userWrites" type="text" name="text" value="">
+      <input class="button" type="submit" name="button" value="button">
+    </form>
+
+
+  </body>
+
+
+  <script>
+    var button = document.querySelector(".button");
+    button.addEventListener("click",showMeHomework);
+
+
+
+    function showMeHomework(event) {
+      event.preventDefault();
+      var newUl = document.createElement("ul");
+      var newLi = document.createElement("li");
+
+      document.querySelector("body").appendChild(newUl);
+      newUl.appendChild(newLi);
+
+      newLi.textContent = document.querySelector("input").value;
+      console.log(newLi.textContent);
+      console.log(newLi.textContent.split(","));
+      
+
+      // now we want to add a value that the user inputs
+    }
+
+    // First: extract the value of the input
+    // Second: store that value somewhere --> array
+    // Third: split the array into multiple objects --> split
+    // Fourth: display each object as a different element --> for loop
+  </script>
+
+
+</html>

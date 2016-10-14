@@ -42,7 +42,7 @@ textarea {
   border: 1px solid rgb(170,170,170);
 }
 
-input {
+.submit-button {
   color: white;
   background: rgb(4,156,216);
   font-family: inherit;
@@ -60,4 +60,9 @@ li {
   list-style-type: none;
   padding: 15px 0 0 0;
   font-size: 22px;
+}
+
+#text-box {
+  width: 600px;
+  font-size: 16px;
 }

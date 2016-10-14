@@ -21,15 +21,17 @@ function newListItem(text) {
   document.querySelector("ul").appendChild(li);
 }
 
-var inputtt = document.querySelector("input");
+var input = document.querySelector(".submit-button");
 
-function newTodo(event) {
+/* function newTodo(event) {
   event.preventDefault();
   newListItem(document.querySelector("textArea").value);
   var total = parseFloat(document.querySelector("#total-count"));
   total.value = parseFloat(total.value) + 1;
 }
-inputtt.addEventListener("click",newTodo);
+ */
+newListItem(textInput.textBox);
 
-var textAreaa = document.querySelector("textArea");
-textAreaa.addEventListener("return",newTodo);
+inputt.addEventListener("click",newListItem);
+
+var textInput = document.querySelector("#text-box");

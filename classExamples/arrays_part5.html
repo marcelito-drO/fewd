@@ -1,3 +1,4 @@
+
 <h1>Cash Register</h1>
 
 <button id="hamburger" data-description="BURGER" data-price="7.99">
@@ -35,6 +36,7 @@
   $0.10
 </button>
 
+<button id="beatles" name="imagine">Let Magic Happen!</button>
 <h2>Receipt</h2>
 
 <table>
@@ -52,6 +54,19 @@
 </table>
 
 <script>
+
+function showMagic(event){
+  var logo = document.createElement("img");
+  logo.setAttribute("alt","Beatles-Imagine");
+  logo.setAttribute("class","beatles");
+  logo.setAttribute("src","beatles.jpg");
+
+  document.querySelector("h1").appendChild(logo);
+}
+
+var buttonBeatles = document.querySelector("#beatles");
+buttonBeatles.addEventListener("click",showMagic);
+
 
 var buttons = document.querySelectorAll("button");
 
