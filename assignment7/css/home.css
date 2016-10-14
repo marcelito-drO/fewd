@@ -25,6 +25,7 @@ ul {
 li {
  padding: 10px 10px;
  display: inline-block;
+ cursor: pointer;
 }
 
 .poster {
@@ -33,4 +34,13 @@ li {
 
 table {
   flex: 2;
+  table-layout: fixed;
+}
+
+table td {
+  max-width: 400px;
+}
+
+th {
+  font-weight: bold;
 }
