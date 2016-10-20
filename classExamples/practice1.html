@@ -13,6 +13,9 @@
       <input class="button" type="submit" name="button" value="button">
     </form>
 
+    <form class="" action="index.html" method="post">
+
+    </form>
 
   </body>
 
@@ -20,8 +23,6 @@
   <script>
     var button = document.querySelector(".button");
     button.addEventListener("click",showMeHomework);
-
-
 
     function showMeHomework(event) {
       event.preventDefault();
@@ -34,7 +35,7 @@
       newLi.textContent = document.querySelector("input").value;
       console.log(newLi.textContent);
       console.log(newLi.textContent.split(","));
-      
+
 
       // now we want to add a value that the user inputs
     }
