@@ -1,20 +1,44 @@
+// Random number generated for first part of the game
+var numberOf = document.querySelector(".numberOf");
+numberOf.addEventListener("click",numberOfPokemon);
 
+function numberOfPokemon(results) {
+  var p = document.createElement("p");
+  var numberClass = document.querySelector(".number");
+  numberClass.appendChild(p);
+  p.textContent = Math.floor(Math.random() * 10) + 1;
+}
 
-/* var button = document.querySelector(".button");
-button.addEventListener("click",showMeHomework);
+// PokeApi used here to determine the Pokemon
+var pokeClick = document.querySelector(".poke-search");
+pokeClick.addEventListener("click",getPokemon);
 
-function showMeHomework(event) {
-  event.preventDefault();
-  var newUl = document.createElement("ul");
-  var newLi = document.createElement("li");
+function getPokemon(event) {
+  var pokemonID = Math.floor(Math.random() * 364) + 1
+  var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonID;
 
-  document.querySelector("body").appendChild(newUl);
-  newUl.appendChild(newLi);
+  $.get(url, displayResults);
+}
+// Need to fix the PokeAPI, something wrong with JSON Object
+function displayResults(results) {
+document.querySelector("#pokemon-name").textContent = results.name;
+}
 
-  newLi.textContent = document.querySelector("input").value;
-  console.log(newLi.textContent);
-  console.log(newLi.textContent.split(","));
-} */
+// StarWars API to call a starship and a planet
+var starClick = document.querySelector(".starwars-search");
+starClick.addEventListener("click",getStarWars);
 
-// The following code allows items to be saved (from previous homework)
-// Need to correct code so it saves in the right spot!
+function getStarWars(event) {
+  var starwarsID = 12;
+  var url = "https://swapi.co/api/" + starwarsID;
+
+  $.get(url, displayResults);
+}
+
+function displayResults(results) {
+
+document.querySelector("#starwars-name").textContent = results.name;
+document.querySelector("#starwars-height").textContent = results.height;
+}
+
+// Put a gif or a search bar down at the bottom of the page?
