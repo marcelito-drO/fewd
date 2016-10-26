@@ -1,44 +1,46 @@
+// Start by adding the ability to call the function as soon as the page loads / is called by the user
+
+document.addEventListener("DOMContentLoaded", spaceAdventure);
+
+var setOfFunctions = [ "Drinking shots of tequila", "Drunk dialing their exes", "Throwing waterballoons at bystanders", "On a energy-drink-chugging competition", "Smoking a YUGE joint", "Driving a Lincoln", "Going All-in", "Talking about the end of the world", "On their iPhones", "Doing bottle service at the club", "Dancing Disco Inferno In Da Club", "Surfing some dope waves"];
+
+function spaceAdventure(event){
 // Random number generated for first part of the game
-var numberOf = document.querySelector(".numberOf");
-numberOf.addEventListener("click",numberOfPokemon);
+  document.querySelector("#numberOf").textContent = Math.floor(Math.random() * 10) + 1;
 
-function numberOfPokemon(results) {
-  var p = document.createElement("p");
-  var numberClass = document.querySelector(".number");
-  numberClass.appendChild(p);
-  p.textContent = Math.floor(Math.random() * 10) + 1;
-}
+// PokeApi used here to spit out a random Pokemon
+  var pokemonID = Math.floor(Math.random() * 364) + 1;
+  var urlPoke = "https://pokeapi.co/api/v2/pokemon/" + pokemonID;
+    $.get(urlPoke, displayPokemon);
 
-// PokeApi used here to determine the Pokemon
-var pokeClick = document.querySelector(".poke-search");
-pokeClick.addEventListener("click",getPokemon);
+    function displayPokemon(results) {
+      console.log("pokemon",results);
+      document.querySelector("#thePokemon").textContent = results.name;
+      document.querySelector(".pokemon").setAttribute("src",results.sprites.front_default);
+    }
 
-function getPokemon(event) {
-  var pokemonID = Math.floor(Math.random() * 364) + 1
-  var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonID;
+// StarWars API to call a character
+  var starwarsID = Math.floor(Math.random() * 70) + 1;
+  var urlStarwars = "https://swapi.co/api/people/" + starwarsID + "?format=json";
+    $.get(urlStarwars, displayStarwars);
 
-  $.get(url, displayResults);
-}
-// Need to fix the PokeAPI, something wrong with JSON Object
-function displayResults(results) {
-document.querySelector("#pokemon-name").textContent = results.name;
-}
+    function displayStarwars(results) {
+      console.log("character",results);
+      document.querySelector("#starCharacter").textContent = results.name;
+    }
 
-// StarWars API to call a starship and a planet
-var starClick = document.querySelector(".starwars-search");
-starClick.addEventListener("click",getStarWars);
+// StarWars API to call a planet
+  var planetID = Math.floor(Math.random() * 20) + 1;
+  var urlPlanet = "https://swapi.co/api/planets/" + planetID + "?format=json";
+    $.get(urlPlanet, displayPlanet);
 
-function getStarWars(event) {
-  var starwarsID = 12;
-  var url = "https://swapi.co/api/" + starwarsID;
+    function displayPlanet(results) {
+      console.log("planet",results);
+      document.querySelector("#starplanet").textContent = results.name;
+    }
 
-  $.get(url, displayResults);
-}
+// Input a set of actions that is randomly generated at the time that the user reloads the page or clicks on the new story button
+    var weirdAction = setOfFunctions[Math.floor(Math.random() * 12)];
+    document.querySelector("#punchLine").textContent = weirdAction;
 
-function displayResults(results) {
-
-document.querySelector("#starwars-name").textContent = results.name;
-document.querySelector("#starwars-height").textContent = results.height;
-}
-
-// Put a gif or a search bar down at the bottom of the page?
+  }
