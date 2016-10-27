@@ -1,0 +1,126 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 18px;
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: url('https://s-media-cache-ak0.pinimg.com/originals/18/dd/9f/18dd9f5ad898658b1b03b2816b788f58.jpg');
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 0;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: url('http://wallpapercave.com/wp/ItmVuT6.jpg');
+}
+
+.btn {
+ margin: 20px 0;
+ padding: 18px 60px;
+ border: 3px dotted #F4444D;
+ font-size: 30px;
+ font-family: 'Titillium Web', sans-serif;
+}
+
+.containeroo {
+  display: flex;
+  padding: 12px 0 0 0;
+}
+
+p {
+ font-size: 30px;
+ font-family: 'Titillium Web', sans-serif;
+}
+
+.card, .smaller-card {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0 auto;
+  background: #CED0CE;
+  color: #353535;
+  width: 24%;
+  float: left;
+  height: 150px;
+  border-radius: 6px;
+  border: 4px solid #353535;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  border: 3px dotted #F4444D;
+}
+
+.smaller-card:hover {
+  border: 3px dotted #F4444D;
+}
+
+.smaller-card {
+  font-family: 'Titillium Web', sans-serif;
+  height: 125px;
+}
+
+#numberOf, #on {
+  font-size: 60px;
+}
+
+#with, #collab, #fewd-title {
+  font-size: 40px;
+}
+
+.stranger-pics {
+  position: center;
+  height: 200px;
+  margin: 15px 15px;
+  border-radius: 120px;
+  border: 3px solid white;
+}
