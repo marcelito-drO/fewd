@@ -1,12 +1,19 @@
 // Start by adding the ability to call the function as soon as the page loads / is called by the user
+var movieClick = document.querySelectorAll(".card");
+for (var i = 0; i < movieClick.length; i++) {
+  movieClick[i].addEventListener("click",spaceAdventure);
+}
 
-document.addEventListener("DOMContentLoaded", spaceAdventure);
+// movieClick.addEventListener("DOMContentLoaded", spaceAdventure);
 
-var setOfFunctions = [ "Drinking shots of tequila", "Drunk dialing their exes", "Throwing waterballoons at bystanders", "On a energy-drink-chugging competition", "Smoking a YUGE joint", "Driving a Lincoln", "Going All-in", "Talking about the end of the world", "On their iPhones", "Doing bottle service at the club", "Dancing Disco Inferno In Da Club", "Surfing some dope waves"];
+var setOfFunctions = [ "Drinking shots of tequila", "Drunk dialing their exes", "Throwing waterballoons at bystanders", "On a energy-drink-chugging competition", "Smoking a YUGE joint", "Driving a Lincoln", "Going All-in", "Talking about the end of the world", "Arrested for Peeing in Public", "Doing bottle service at the club", "Dancing Disco Inferno In Da Club", "Surfing some dope waves"];
 
 function spaceAdventure(event){
 // Random number generated for first part of the game
   document.querySelector("#numberOf").textContent = Math.floor(Math.random() * 10) + 1;
+
+  document.querySelector("#with").textContent = "WITH";
+  document.querySelector("#on").textContent = "ON";
 
 // PokeApi used here to spit out a random Pokemon
   var pokemonID = Math.floor(Math.random() * 364) + 1;

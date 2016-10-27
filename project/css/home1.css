@@ -1,34 +1,36 @@
-body {
-  background-color: #007EA7;
+html {
+  font-family: 'Titillium Web', sans-serif;
 }
 
 header {
- padding: 8px 0;
- background-color: #003459;
+ padding: 16px 0;
+ background-color: #CED0CE;
  color: white;
  text-align: center;
 }
 
 main {
   padding: 10px 50px 10px 50px;
+  background-color: #353535;
 }
 
 .container {
   display: flex;
+  padding: 12px 0 12px 0;
 }
 
-
 p {
- font-size: 20px;
+ font-size: 40px;
 }
 
 .card {
+  font-family: inherit;
   margin: 0 auto;
-  background: #003459;
+  background: #CED0CE;
   color: white;
-  width: 15%;
+  width: 22%;
   float: left;
-  height: 200px;
+  height: 175px;
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -36,8 +38,27 @@ p {
   justify-content: center;
 }
 
-#with {
+.smaller-card {
+  font-family: inherit;
+  margin: 0 auto;
+  background: #CED0CE;
+  color: white;
+  width: 20%;
+  float: left;
+  height: 125px;
+  border-radius: 6px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#numberOf, #on {
+  font-size: 60px;
+}
+
+#with {
+  font-size: 40px;
 }
 
 hr{
@@ -46,7 +67,7 @@ hr{
 
 .new-adventure-button {
   color: white;
-  background: #FCA311;
+  background: #191919;
   font-family: inherit;
   border: none;
   font-size: 30px;
