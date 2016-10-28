@@ -1,7 +1,7 @@
 // Start by adding the ability to call the function as soon as the page loads / is called by the user
-var movieClick = document.querySelectorAll(".card");
-for (var i = 0; i < movieClick.length; i++) {
-  movieClick[i].addEventListener("click",spaceAdventure);
+var cardClick = document.querySelectorAll(".card");
+for (var i = 0; i < cardClick.length; i++) {
+  cardClick[i].addEventListener("click",spaceAdventure);
 }
 
 // var button = document.querySelector(".new-adventure-button");
