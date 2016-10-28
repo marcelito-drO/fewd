@@ -117,10 +117,13 @@ p {
   font-size: 40px;
 }
 
+.the-creators {
+  float: right;
+}
+
 .stranger-pics {
-  position: center;
-  height: 200px;
-  margin: 15px 15px;
-  border-radius: 120px;
+  height: 198px;
+  margin: 30px 20px 0;
+  border-radius: 100px;
   border: 3px solid white;
 }
