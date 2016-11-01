@@ -48,7 +48,7 @@ function spaceAdventure(event){
       console.log("planet",results);
       document.querySelector("#starplanet").textContent = results.name;
     }
-
+   
 // Input a set of actions that is randomly generated at the time that the user // reloads the page or clicks on the new story button
   var weirdAction = setOfActions[Math.floor(Math.random() * 12)];
   document.querySelector("#punchLine").textContent = weirdAction;
